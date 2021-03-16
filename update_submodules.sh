@@ -11,27 +11,12 @@
 # You can contact the author at roland.jung@aau.at
 #
 ################################################################################
+echo "HINT: updates all submodules"
 
-echo "HINT: iterates over the pkgs directory and create an entry in the requirements.txt"
-
-CUR_DIR=${PWD}
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-
-REQ_FILE="${DIR}/requirements.txt"
-
-
-if [ "${REQ_FILE}" ]; then
-  rm ${REQ_FILE} 
-fi  
-
-touch ${REQ_FILE} 
+git submodule update --init --recursive
+git submodule foreach --recursive git fetch
+git submodule foreach git clean -f
+git submodule foreach git pull origin master
 
 
-for file in ${DIR}/pkgs/* ; do 
-          
-  if [[ -d "$file" && ! -L "$file" ]]; then
-    echo "--> module found: ${file}"   
-    echo "-e $file" >> ${REQ_FILE}
-  fi; 
-done
 

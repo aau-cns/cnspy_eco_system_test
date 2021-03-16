@@ -1,20 +1,20 @@
 [submodule "pkgs/csv2dataframe"]
-	path = pkgs/csv2dataframe
+	path = pkgs/d_csv2dataframe
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/csv2dataframe.git
 [submodule "pkgs/numpy_utils"]
-	path = pkgs/numpy_utils
+	path = pkgs/a_numpy_utils
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/numpy_utils.git
 [submodule "pkgs/rosbag2csv"]
 	path = pkgs/rosbag2csv
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/rosbag2csv.git
 [submodule "pkgs/script_utils"]
-	path = pkgs/script_utils
+	path = pkgs/a_script_utils
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/script_utils.git
 [submodule "pkgs/spatial_csv_formats"]
-	path = pkgs/spatial_csv_formats
+	path = pkgs/b_spatial_csv_formats
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/spatial_csv_formats.git
 [submodule "pkgs/timestamp_association"]
-	path = pkgs/timestamp_association
+	path = pkgs/c_timestamp_association
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/timestamp_association.git
 [submodule "pkgs/trajectory"]
 	path = pkgs/trajectory

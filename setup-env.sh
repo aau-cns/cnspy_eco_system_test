@@ -5,10 +5,8 @@
 #
 # All rights reserved.
 #
-# This software is licensed under the terms of the BSD-2-Clause-License with
-# the "Commons Clause" License Condition v1.0 which allows for non-commercial
-# use only, the full terms of which are made available in the LICENSE file.
-# No license in patents is granted.
+# This software is licensed under the terms of the MIT License, the full terms 
+# of which are made available in the LICENSE file.
 #
 # You can contact the author at roland.jung@aau.at
 #
@@ -43,6 +41,7 @@ which python
 
 # install requirements:
 pip install -r ${DIR}/requirements.txt
+
 
 cd ${CUR_DIR}
 
