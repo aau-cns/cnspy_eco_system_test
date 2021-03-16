@@ -12,14 +12,9 @@
 #
 ################################################################################
 
-
-
-
-
 CUR_DIR=${PWD}
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 VENV_DIR=${DIR}/python-venv
-
 
 
 # first generate the requirments:
