@@ -26,6 +26,8 @@ fi
 
 touch ${REQ_FILE} 
 
+# needed in PyCharm to run test cases
+echo "pytest" >> ${REQ_FILE}
 
 for file in ${DIR}/pkgs/* ; do 
           
