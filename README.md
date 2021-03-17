@@ -1,4 +1,4 @@
-#  Our python3 package eco-system 
+#  Test the CNS python package eco-system 
 
 A repository to check out all packages of our eco-system, to set up a virtual environment, and finally to run all unit tests. 
 The directory names of the submodules was modified intentionally to render the dependency graph manually, as `pip` is not able to resolve dependencies within a `requirements.txt` file.
