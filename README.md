@@ -7,7 +7,7 @@ This allows us (i) to generate a `requirements.txt` file based on all submodules
 
 HINT: This project can also be used to develop/extend existing packages (submodules). 
 
-## Overview
+## Overview of the cnspy eco-system
 
 ![eco-system](./doc/pic/architecture.png)
 HINT: the diagram was created with [DrawIO](https://drawio-app.com/)
@@ -15,7 +15,7 @@ HINT: the diagram was created with [DrawIO](https://drawio-app.com/)
 ## Setup 
 Clone the repository with all submodules:
 ```
-git clone --recurse-submodules -j8 git@gitlab.aau.at:aau-cns/py3_pkgs/test_all_py3_pkgs.git
+git clone --recurse-submodules -j8 git@github.com:aau-cns/cnspy_eco_system_test.git
 ```
 
 Then run the `source setup-env.sh` that will
@@ -43,6 +43,17 @@ Then got to `File->Settings->Project:<>->Python Interpreter`. There none is sele
 Click on `Existing Interpreter` and navigate to `<root>/python-venv/env/bin/python3`. Now everything should be working.
 A quick check is to run a test in the package `trajectory_evaluation` (e.g. [test_TrajectoryNEES.py](./pkgs/f_trajectory_evaluation/test/test_TrajectoryNEES.py)).
 
+### Develop a new package
+
+Typically, ones first implements a package directly in a python project and later, once it is working and tested, it might be extracted to a standalone/official package.
+The same happened with the modules from the `cnspy eco-system`. So the question remains, how to extend existing packages or create new modules with new features relating to that eco-system? Well, one solution that seems to be hackish is to create symbolic links in the root of this repository directing to the python package within each git submodule, e.g.: 
+```
+ <root>$ ln -s ./pkgs/a_numpy_utils/cns_numpy_utils 
+```
+After having done for all required packages, run e.g. `PyCharm` in the root and follow the previously mentioned steps to setup the project interpreter. 
+Now you can create a new `Python Package` in the root of this repository which has all dependencies resolved and all packages can be modified/edited.
+
+**Suggestions for improvements are highly appreciated!**
 
 ## License
 

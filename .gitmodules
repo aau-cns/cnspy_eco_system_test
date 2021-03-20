@@ -1,24 +1,24 @@
-[submodule "pkgs/csv2dataframe"]
+[submodule "pkgs/cnspy_csv2dataframe"]
 	path = pkgs/d_csv2dataframe
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_csv2dataframe.git
-[submodule "pkgs/numpy_utils"]
+	url = git@github.com:aau-cns/cnspy_csv2dataframe.git
+[submodule "pkgs/cnspy_numpy_utils"]
 	path = pkgs/a_numpy_utils
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_numpy_utils.git
-[submodule "pkgs/rosbag2csv"]
+	url = git@github.com:aau-cns/cnspy_numpy_utils.git
+[submodule "pkgs/cnspy_rosbag2csv"]
 	path = pkgs/e_rosbag2csv
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_rosbag2csv.git
-[submodule "pkgs/script_utils"]
+	url = git@github.com:aau-cns/cnspy_rosbag2csv.git
+[submodule "pkgs/cnspy_script_utils"]
 	path = pkgs/a_script_utils
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_script_utils.git
-[submodule "pkgs/spatial_csv_formats"]
+	url = git@github.com:aau-cns/cnspy_script_utils.git
+[submodule "pkgs/cnspy_spatial_csv_formats"]
 	path = pkgs/b_spatial_csv_formats
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_spatial_csv_formats.git
-[submodule "pkgs/timestamp_association"]
+	url = git@github.com:aau-cns/cnspy_spatial_csv_formats.git
+[submodule "pkgs/cnspy_timestamp_association"]
 	path = pkgs/c_timestamp_association
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_timestamp_association.git
-[submodule "pkgs/trajectory"]
+	url = git@github.com:aau-cns/cnspy_timestamp_association.git
+[submodule "pkgs/cnspy_trajectory"]
 	path = pkgs/f_trajectory
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_trajectory.git
-[submodule "pkgs/trajectory_evaluation"]
+	url = git@github.com:aau-cns/cnspy_trajectory.git
+[submodule "pkgs/cnspy_trajectory_evaluation"]
 	path = pkgs/f_trajectory_evaluation
-	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_trajectory_evaluation.git
+	url = git@github.com:aau-cns/cnspy_trajectory_evaluation.git
