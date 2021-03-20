@@ -17,7 +17,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 VENV_DIR=${DIR}/python-venv
 
 
-bash update_submodules.sh
+#bash update_submodules.sh
 
 # create virtual environment
 if [ ! -d "$VENV_DIR" ]; then
@@ -38,6 +38,7 @@ for file in ${DIR}/pkgs/* ; do
   if [[ -d "$file" && ! -L "$file" ]]; then
     cd $file
     python3 -m build
-    python3 -m twine upload --repository testpypi dist/*
+    # testpyi: python3 -m twine upload --repository testpypi dist/*
+    python3 -m twine upload dist/*
   fi; 
 done

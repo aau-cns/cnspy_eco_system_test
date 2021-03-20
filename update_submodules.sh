@@ -16,8 +16,8 @@ echo "HINT: updates all submodules"
 git submodule update --init --recursive
 git submodule foreach --recursive git fetch -ap
 git submodule foreach git clean -dfX
-git submodule foreach git checkout -b master
-git submodule foreach git pull origin master
+git submodule foreach git checkout main
+git submodule foreach git pull origin main
 
 
 
