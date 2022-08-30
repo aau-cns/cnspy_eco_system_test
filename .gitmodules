@@ -22,3 +22,6 @@
 [submodule "pkgs/cnspy_trajectory_evaluation"]
 	path = pkgs/f_trajectory_evaluation
 	url = git@github.com:aau-cns/cnspy_trajectory_evaluation.git
+[submodule "pkgs/cnspy_rosbag2image"]
+	path = pkgs/e_cnspy_rosbag2image
+	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_rosbag2image.git
