@@ -57,7 +57,7 @@ Therefore, run the application in the root of the repository after the setup ste
 One will be asked to define a project interpreter, but reject it in the beginning. 
 Then got to `File->Settings->Project:<>->Python Interpreter`. There `none` is selected, thus click on the setting button (*) to get the `Add` dialog.
 Click on `Existing Interpreter` and navigate to `<root>/python-venv/env/bin/python3`. Now everything should be working.
-A quick check is to run a test in the package `trajectory_evaluation` (e.g. [test_TrajectoryNEES.py](./pkgs/f_trajectory_evaluation/test/test_TrajectoryNEES.py)).
+A quick check is to run a test in the package `trajectory_evaluation` (e.g. [test_TrajectoryNEES.py](./pkgs/f_trajectory_evaluation/test/test_TrajectoryPosOrientNEES.py)).
 
 ### Develop a new package
 
