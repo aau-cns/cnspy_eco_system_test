@@ -25,3 +25,6 @@
 [submodule "pkgs/cnspy_rosbag2image"]
 	path = pkgs/e_rosbag2image
 	url = git@gitlab.aau.at:aau-cns/py3_pkgs/cnspy_rosbag2image.git
+[submodule "pkgs/f_ranging_evaluation"]
+	path = pkgs/f_ranging_evaluation
+	url = git@github.com:aau-cns/cnspy_ranging_evaluation.git
