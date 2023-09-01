@@ -25,11 +25,11 @@ HINT: the diagram was created with [DrawIO](https://drawio-app.com/)
 
 ## Setup 
 Clone the repository with all submodules:
-```
+```cmd
 git clone --recurse-submodules -j8 git@github.com:aau-cns/cnspy_eco_system_test.git
 ```
 or after cloning
-```commandline
+```cmd
 git submodule update --init --recursive
 ```
 
@@ -37,7 +37,7 @@ git submodule update --init --recursive
 Then run the `source setup-env.sh` that will
 1) generate the `requirements.txt` based on the submodules
 2) install a virtual environment `python-venv`
-3) activate the local interpreter `(venv)`
+3) activate the local interpreter `(venv)` or launch [PyCharm](https://www.jetbrains.com/pycharm/) from the root.
 
 
 ## Unit-tests
@@ -61,25 +61,10 @@ A quick check is to run a test in the package `trajectory_evaluation` (e.g. [tes
 
 ### Develop a new package
 
-
-
-#### Method 1
-Typically, ones first implements a package directly in a python project and later, once it is working and tested, it might be extracted to a standalone/official package.
-The same happened with the modules from the `cnspy eco-system`. So the question remains, how to extend existing packages or create new modules with new features relating to that eco-system? Well, one solution that seems to be hackish is to create symbolic links in the root of this repository directing to the python package within each git submodule, e.g.: 
-```
- <root>$ ln -s ./pkgs/a_numpy_utils/cns_numpy_utils 
-```
-After having done for all required packages, run e.g. `PyCharm` in the root and follow the previously mentioned steps to setup the project interpreter. 
-Now you can create a new `Python Package` in the root of this repository which has all dependencies resolved and all packages can be modified/edited.
-
-**Suggestions for improvements are highly appreciated!**
-
-#### Method 2
-
 1. Create a new git repository containing initial files for the python package (LICENCE, README.md, RELEASE, setup.py, requirements.txt, folders: test, <package_name>) copy and modify from e.g, the [cnspy_spatial_csv_formats]((https://github.com/aau-cns/cnspy_spatial_csv_formats) package.  
-2. Add it as a submodule under the folder `pkgs`, with an alphabetical prefix refering to the toplevel dependency. E.g. `d_csv2dataframe` requires `b_spatial_csv_formats`. The prefix is needed to create automatically the `requirements.txt` file!
-3. If the have already create a virtual environment in the root of `cnspy_eco_system_text`, source the python environment (`cnspy_eco_system_test$ source python-venv/env/bin/activate`), recreate the reqirements.txt by `cnspy_eco_system_test$ ./generate_requirements.sh`, and install all packages again by `(env) <>/cnspy_eco_system_test$ pip install -r requirements.txt`
-4. Now, the new package is in the environment and can be developed/modified in `Pycharm`.
+2. Add it as a submodule under the folder `pkgs`, with an alphabetical prefix referring to the top-level dependency. E.g. `d_csv2dataframe` requires `b_spatial_csv_formats`. The prefix is needed to create automatically the `requirements.txt` file!
+3. If the have already create a virtual environment in the root of `cnspy_eco_system_test`, source the python environment (`cnspy_eco_system_test$ source python-venv/env/bin/activate`), recreate the reqirements.txt by `cnspy_eco_system_test$ ./generate_requirements.sh`, and install all packages again by `(env) <>/cnspy_eco_system_test$ pip install -r requirements.txt`
+4. Now, the new package is in the environment and can be developed/modified in `Pycharm` that is launch in the root with the virtual-environment selected.
 
 ## License
 
