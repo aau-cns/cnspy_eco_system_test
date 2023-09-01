@@ -33,10 +33,10 @@ python3 -m pip install --upgrade twine
 
 echo "HINT: building and uploading all packages using twine"
 echo "HINT: make sure you have setup the API token in /home/.pypirc !"
-for file in ${DIR}/pkgs/* ; do 
+for file in "${DIR}"/pkgs/* ; do
           
   if [[ -d "$file" && ! -L "$file" ]]; then
-    cd $file
+    cd $file || return
     python3 -m build
     # testpyi: python3 -m twine upload --repository testpypi dist/*
     python3 -m twine upload dist/*
