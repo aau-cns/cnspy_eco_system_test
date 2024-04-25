@@ -22,6 +22,7 @@ HINT: the diagram was created with [DrawIO](https://drawio-app.com/)
 - [cnspy_timestamp_association](https://github.com/aau-cns/cnspy_timestamp_association) and the [official package](https://pypi.org/project/cnspy-timestamp-association/)
 - [cnspy_trajectory](https://github.com/aau-cns/cnspy_trajectory) and the [official package](https://pypi.org/project/cnspy-trajectory/)
 - [cnspy_trajectory_evaluation](https://github.com/aau-cns/cnspy_trajectory_evaluation) and the [official package](https://pypi.org/project/cnspy-trajectory-evaluation/) 
+- [cnspy_ranging_evaluation](https://github.com/aau-cns/cnspy_ranging_evaluation) and the [official package](https://pypi.org/project/cnspy-ranging-evaluation/) 
 
 ## Setup 
 Clone the repository with all submodules:
