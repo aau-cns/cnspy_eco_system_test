@@ -33,12 +33,25 @@ python3 -m pip install --upgrade twine
 
 echo "HINT: building and uploading all packages using twine"
 echo "HINT: make sure you have setup the API token in /home/.pypirc !"
+
+
 for file in "${DIR}"/pkgs/* ; do
-          
+#for file in "${DIR}"/pkgs//f_trajectory_evaluation ; do
   if [[ -d "$file" && ! -L "$file" ]]; then
     cd $file || return
+
+    echo  "HINT: removing old dist and egg-info directory!"
+    rm -r dist
+    rm -r *.egg-info
+    
+    echo  "HINT: build and upload package usign twine..."
     python3 -m build
     # testpyi: python3 -m twine upload --repository testpypi dist/*
     python3 -m twine upload dist/*
+
+    echo  "HINT: removing new dist and egg-info directory!"
+    rm -r dist
+    rm -r *.egg-info
+
   fi; 
 done
