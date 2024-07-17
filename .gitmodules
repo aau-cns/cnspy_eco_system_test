@@ -28,3 +28,6 @@
 [submodule "pkgs/f_ranging_evaluation"]
 	path = pkgs/f_ranging_evaluation
 	url = git@github.com:aau-cns/cnspy_ranging_evaluation.git
+[submodule "pkgs/f_rel_pose_eval"]
+	path = pkgs/g_rel_pose_eval
+	url = git@github.com:aau-cns/cnspy_relative_pose_evaluation.git

@@ -63,7 +63,7 @@ A quick check is to run a test in the package `trajectory_evaluation` (e.g. [tes
 ### Develop a new package
 
 1. Create a new git repository containing initial files for the python package (LICENCE, README.md, RELEASE, setup.py, requirements.txt, folders: test, <package_name>) copy and modify from e.g, the [cnspy_spatial_csv_formats]((https://github.com/aau-cns/cnspy_spatial_csv_formats) package.  
-2. Add it as a submodule under the folder `pkgs`, with an alphabetical prefix referring to the top-level dependency. E.g. `d_csv2dataframe` requires `b_spatial_csv_formats`. The prefix is needed to create automatically the `requirements.txt` file!
+2. Add it as a submodule under the folder `pkgs`, with an alphabetical prefix referring to the top-level dependency. E.g. `d_csv2dataframe` requires `b_spatial_csv_formats`. The prefix is needed to create automatically the `requirements.txt` file! E.g: `pkgs$ git submodule add git@github.com:aau-cns/XXX.git f_XXX`
 3. If the have already create a virtual environment in the root of `cnspy_eco_system_test`, source the python environment (`cnspy_eco_system_test$ source python-venv/env/bin/activate`), recreate the reqirements.txt by `cnspy_eco_system_test$ ./generate_requirements.sh`, and install all packages again by `(env) <>/cnspy_eco_system_test$ pip install -r requirements.txt`
 4. Now, the new package is in the environment and can be developed/modified in `Pycharm` that is launch in the root with the virtual-environment selected.
 
